@@ -16,14 +16,14 @@ export default function Footer() {
             로또는 사행성 게임이므로 과도한 몰입을 지양하고 재미로만 즐겨주시기 바랍니다.
           </p>
 
-          <div className="flex items-center justify-center gap-4 text-xs text-white/40 mb-4 transition-colors">
-            <Link href="/privacy" className="hover:text-[--primary] transition-colors">
-              개인정보처리방침
-            </Link>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-white/40 mb-4">
+            <Link href="/about" className="hover:text-[--primary] transition-colors">서비스 소개</Link>
             <span>·</span>
-            <Link href="/terms" className="hover:text-[--primary] transition-colors">
-              이용약관
-            </Link>
+            <Link href="/contact" className="hover:text-[--primary] transition-colors">문의하기</Link>
+            <span>·</span>
+            <Link href="/privacy" className="hover:text-[--primary] transition-colors">개인정보처리방침</Link>
+            <span>·</span>
+            <Link href="/terms" className="hover:text-[--primary] transition-colors">이용약관</Link>
           </div>
 
           <p className="text-xs text-white/30 font-mono">

@@ -11,9 +11,11 @@ export default function Header() {
             <span className="text-[--primary] text-xs ml-1.5 hidden sm:inline font-medium">데이터 기반 번호 분석</span>
           </div>
         </Link>
-        <nav className="flex items-center gap-5 text-xs text-[#a3aac4] font-medium">
-          <Link href="/privacy" className="hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">개인정보처리방침</Link>
-          <Link href="/terms" className="hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">이용약관</Link>
+        <nav className="flex items-center gap-4 text-xs text-[#a3aac4] font-medium">
+          <Link href="/about" className="hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">소개</Link>
+          <Link href="/contact" className="hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">문의</Link>
+          <Link href="/privacy" className="hidden sm:inline hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">개인정보처리방침</Link>
+          <Link href="/terms" className="hidden sm:inline hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">이용약관</Link>
         </nav>
       </div>
     </header>
