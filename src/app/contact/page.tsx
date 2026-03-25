@@ -24,7 +24,7 @@ export default function ContactPage() {
           </p>
           <div className="glass-panel rounded-2xl p-5 border border-[#94aaff]/20">
             <p className="text-xs text-[#a3aac4] font-mono mb-1">이메일</p>
-            <p className="text-[#94aaff] font-bold text-lg">contact@lotto-lab.kr</p>
+            <p className="text-[#94aaff] font-bold text-lg">studioplab@gmail.com</p>
           </div>
         </section>
 
