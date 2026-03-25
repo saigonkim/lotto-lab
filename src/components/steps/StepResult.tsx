@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import type { GenerateResult, EngineType } from "@/types";
 import LottoBall from "@/components/ui/LottoBall";
 import ShareButton from "@/components/ui/ShareButton";
-import AdBanner from "@/components/ads/AdBanner";
 import { ENGINES } from "@/lib/utils/engines-config";
 
 interface StepResultProps {
@@ -38,9 +37,6 @@ export default function StepResult({ result, onReset, onRetry }: StepResultProps
 
   return (
     <div className="w-full max-w-2xl mx-auto px-4 sm:px-0">
-      {/* 상단 AdSense 배너 */}
-      <AdBanner slot="top" />
-
       {/* 엔진 뱃지 */}
       <div className="text-center mb-8">
         <span className="inline-block px-5 py-2 glass-panel text-[--primary] rounded-full text-xs font-bold tracking-widest mb-4 border-[--primary]/30 shadow-[0_0_15px_rgba(148,170,255,0.2)]">
@@ -116,10 +112,6 @@ export default function StepResult({ result, onReset, onRetry }: StepResultProps
         <span>⚙️</span> 알고리즘 엔진 변경
       </button>
 
-      {/* 하단 AdSense 배너 */}
-      <div className="mt-8">
-        <AdBanner slot="bottom" />
-      </div>
     </div>
   );
 }
