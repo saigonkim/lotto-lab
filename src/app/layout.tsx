@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -171,6 +172,20 @@ export default function RootLayout({
         />
       </head>
       <body className="flex flex-col min-h-screen relative overflow-x-hidden text-white">
+        {/* Google Analytics GA4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-F2XKS7GKB5"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-F2XKS7GKB5');
+          `}
+        </Script>
+
         <div className="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-[#cb7bff] blur-[150px] opacity-20 pointer-events-none" />
         <div className="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-[#94aaff] blur-[150px] opacity-20 pointer-events-none" />
 
