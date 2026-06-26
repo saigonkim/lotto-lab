@@ -1,5 +1,5 @@
 """
-사용자 제공 수동 데이터를 lotto_history.json에 추가합니다. (1227회 ~ 1228회)
+사용자 제공 수동 데이터를 lotto_history.json에 추가합니다. (1229회)
 """
 import json, os, time
 
@@ -8,8 +8,7 @@ PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 JSON_PATH    = os.path.join(PROJECT_ROOT, "public", "data", "lotto_history.json")
 
 MANUAL_DATA = [
-    (1227, "2026-06-06", [1, 14, 16, 34, 41, 44], 13),
-    (1228, "2026-06-13", [24, 29, 30, 31, 35, 44], 1),
+    (1229, "2026-06-20", [12, 13, 29, 34, 37, 42], 16),
 ]
 
 def main():
