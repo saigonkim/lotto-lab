@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-26",
-  "totalRounds": 163,
+  "lastUpdated": "2026-06-28",
+  "totalRounds": 164,
   "data": [
     {
       "round": 1,
@@ -2120,6 +2120,19 @@
         42
       ],
       "bonus": 16
+    },
+    {
+      "round": 1230,
+      "date": "2026-06-27",
+      "numbers": [
+        3,
+        8,
+        9,
+        22,
+        28,
+        42
+      ],
+      "bonus": 45
     }
   ]
 }
